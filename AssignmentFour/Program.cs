@@ -86,6 +86,13 @@ namespace AssignmentFour
 
             #endregion
 
+            #region Question 10
+
+            //PrintBookInfo("Clean Code");
+            //PrintBookInfo("Clean Code", 450);
+
+            #endregion 
+
         }
 
 
@@ -151,6 +158,15 @@ namespace AssignmentFour
             }
             price = 0;
             return false;
+        }
+
+        #endregion
+
+        #region Question 10
+
+        static void PrintBookInfo(string title, int pages = 300)
+        {
+            Console.WriteLine($"Title: {title}, Pages: {pages}");
         }
 
         #endregion
