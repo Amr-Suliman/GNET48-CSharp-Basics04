@@ -26,8 +26,25 @@
 
             #endregion
 
+            #region Question 03
+
+            PrintWelcomeMessage();
+
+            #endregion
+
 
 
         }
+
+
+        #region Question 03
+
+        public static void PrintWelcomeMessage()
+        {
+            Console.WriteLine("Welcome to the Library!");
+        }
+
+        #endregion
     }
 }
+
