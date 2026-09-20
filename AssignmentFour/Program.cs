@@ -1,4 +1,6 @@
-﻿namespace AssignmentFour
+﻿using System.ComponentModel;
+
+namespace AssignmentFour
 {
     internal class Program
     {
@@ -40,10 +42,22 @@
 
             #region Question 05
 
-            int pages = 400;
-            Console.WriteLine($"Before adding bouns pages: {pages}");
-            AddBounsPages(pages);
-            Console.WriteLine($"After adding bouns pages: {pages}");
+            //int pages = 400;
+            //Console.WriteLine($"Before adding bouns pages: {pages}");
+            //AddBounsPages(pages);
+            //Console.WriteLine($"After adding bouns pages: {pages}");
+
+            //Why? Because int is a value type, so the method receives a copy of pages.
+            //The change inside the method does not affect the original variable in Main.
+
+            #endregion
+
+            #region Question 06
+
+            //double[] prices = { 25.5, 40.0 };
+            //Console.WriteLine($"Before applying discount: {prices[0]}");
+            //ApplyDiscount(prices);
+            //Console.WriteLine($"After applying discount: {prices[0]}");
 
             #endregion
 
@@ -74,6 +88,13 @@
             pages += 50;
         }
 
+        #endregion
+
+        #region Question 06
+        public static void ApplyDiscount(double[] prices)
+        {
+            prices[0] -= 5;
+        }
         #endregion
     }
 }
