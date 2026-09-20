@@ -61,6 +61,15 @@ namespace AssignmentFour
 
             #endregion
 
+            #region Question 07
+
+            //int pages = 400;
+            //Console.WriteLine($"Before adding bouns pages: {pages}");
+            //AddBounsPages(ref pages );
+            //Console.WriteLine($"After adding bouns pages: {pages}");
+
+            #endregion
+
         }
 
 
@@ -96,6 +105,14 @@ namespace AssignmentFour
             prices[0] -= 5;
         }
         #endregion
+
+        #region Question 07
+
+        public static void AddBounsPages(ref  int pages)
+        {
+            pages += 50;
+        }
+
+        #endregion
     }
 }
-
