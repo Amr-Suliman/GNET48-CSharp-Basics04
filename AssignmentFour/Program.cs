@@ -78,6 +78,14 @@ namespace AssignmentFour
 
             #endregion
 
+            #region Question 09
+
+            //bool result = TryGetPrice("Clean Code", out double price);
+            //Console.WriteLine(result);
+            //Console.WriteLine(price);
+
+            #endregion
+
         }
 
 
@@ -125,13 +133,27 @@ namespace AssignmentFour
 
         #region Question 08
 
-        //public static void ReplaceArray(ref double[] prices)
-        //{
-        //    prices = new double[] { 10.0, 12.5, 15.0 };
-        //}
+        public static void ReplaceArray(ref double[] prices)
+        {
+            prices = new double[] { 10.0, 12.5, 15.0 };
+        }
 
         #endregion
 
+        #region Question 09
+
+        static bool TryGetPrice(string title, out double price)
+        {
+            if (title == "Clean Code")
+            {
+                price = 25.5;
+                return true;
+            }
+            price = 0;
+            return false;
+        }
+
+        #endregion
 
     }
 }
