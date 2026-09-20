@@ -28,16 +28,24 @@
 
             #region Question 03
 
-            PrintWelcomeMessage();
+            //PrintWelcomeMessage();
 
             #endregion
 
             #region Question 04
 
-            PrintBookTitle("Clean Code");
+            //PrintBookTitle("Clean Code");
 
             #endregion
 
+            #region Question 05
+
+            int pages = 400;
+            Console.WriteLine($"Before adding bouns pages: {pages}");
+            AddBounsPages(pages);
+            Console.WriteLine($"After adding bouns pages: {pages}");
+
+            #endregion
 
         }
 
@@ -55,6 +63,15 @@
         public static void PrintBookTitle(string title)
         {
             Console.WriteLine("Book Title: " +  title);
+        }
+
+        #endregion
+
+        #region Question 05
+
+        public static void AddBounsPages(int pages)
+        {
+            pages += 50;
         }
 
         #endregion
