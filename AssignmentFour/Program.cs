@@ -70,6 +70,14 @@ namespace AssignmentFour
 
             #endregion
 
+            #region Question 08
+
+            //double[] prices = { 25.5, 40.0 };
+            //ReplaceArray(ref prices);
+            //Console.WriteLine($"Prices Length: {prices.Length}");
+
+            #endregion
+
         }
 
 
@@ -114,5 +122,16 @@ namespace AssignmentFour
         }
 
         #endregion
+
+        #region Question 08
+
+        //public static void ReplaceArray(ref double[] prices)
+        //{
+        //    prices = new double[] { 10.0, 12.5, 15.0 };
+        //}
+
+        #endregion
+
+
     }
 }
