@@ -99,6 +99,12 @@ namespace AssignmentFour
 
             #endregion
 
+            #region Question 12
+
+            PrintAllTitles("Clean Code", "The Pragmatic Programmer", "Code Complete");
+
+            #endregion
+
         }
 
 
@@ -182,6 +188,18 @@ namespace AssignmentFour
         static void PrintBooksInfo(string title, int pages = 300)
         {
             Console.WriteLine($"Title: {title}, Pages: {pages}");
+        }
+
+        #endregion
+
+        #region Question 12
+
+        static void PrintAllTitles(params string[] titles)
+        {
+            foreach (string title in titles)
+            {
+                Console.WriteLine(title);
+            }
         }
 
         #endregion
